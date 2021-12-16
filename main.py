@@ -2,9 +2,11 @@ from flask import Flask, request,jsonify
 from flask_cors import CORS
 import tensorflow as tf
 import numpy as np 
+from pathlib import Path 
 app = Flask(__name__)
 CORS(app)
-model = tf.keras.models.load_model(r'.\n_model\n_quotes_prediction_model')
+path = str(Path())
+model = tf.keras.models.load_model(path + '//n_model//n_quotes_prediction_model
 
 interpreter = {
     0: "between 0 and 10 quotes",
