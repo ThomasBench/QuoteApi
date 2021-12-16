@@ -38,6 +38,7 @@ def model_out(model,obj):
 @app.route('/predict/', methods = ['GET'])
 def predict():
     obj = dict(request.args)
+    obj["age"] = int(obj["age"])
     score = model_out(model,obj)
     return jsonify({'score' : score })
 
