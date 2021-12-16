@@ -2,11 +2,8 @@ from flask import Flask, request,jsonify
 from flask_cors import CORS
 import tensorflow as tf
 import numpy as np 
-import zipfile as zp 
 app = Flask(__name__)
 CORS(app)
-with zp.ZipFile('./model_7.zip', 'r') as zip_ref:
-    zip_ref.extractall("n_model")
 model = tf.keras.models.load_model(r'.\n_model\n_quotes_prediction_model')
 
 interpreter = {
