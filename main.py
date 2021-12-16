@@ -40,5 +40,4 @@ def predict():
     obj = dict(request.args)
     score = model_out(model,obj)
     return jsonify({'score' : score })
-app.run()
 
