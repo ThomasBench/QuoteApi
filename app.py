@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 with zp.ZipFile('./model_7.zip', 'r') as zip_ref:
     zip_ref.extractall("n_model")
-model = tf.keras.models.load_model(r'.\n_quotes_prediction_model')
+model = tf.keras.models.load_model(r'.\n_model\n_quotes_prediction_model')
 
 interpreter = {
     0: "between 0 and 10 quotes",
