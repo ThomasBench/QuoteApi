@@ -1,1 +1,1 @@
-web: gunicorn wgsi:main
+web: gunicorn wgsi:app
