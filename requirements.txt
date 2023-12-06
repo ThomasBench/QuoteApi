@@ -18,12 +18,12 @@ h5py==3.6.0
 idna==3.3
 importlib-metadata==4.8.3
 itsdangerous==2.0.1
-Jinja2==3.0.3
+# Jinja2==3.0.3
 keras==2.7.0
 Keras-Preprocessing==1.1.2
 libclang==12.0.0
 Markdown==3.3.6
-MarkupSafe==2.0.1
+# MarkupSafe==2.0.1
 numpy==1.21.4
 oauthlib==3.1.1
 opt-einsum==3.3.0
@@ -43,7 +43,7 @@ tensorflow-io-gcs-filesystem==0.23.1
 termcolor==1.1.0
 typing_extensions==4.0.1
 urllib3==1.26.7
-Werkzeug==3.0.1
+# Werkzeug==3.0.1
 wincertstore==0.2
 wrapt==1.13.3
 zipp==3.6.0
