@@ -5,8 +5,8 @@ certifi==2021.10.8
 charset-normalizer==2.0.9
 click==8.0.3
 colorama==0.4.4
-Flask==3.0.0
-Flask-Cors==3.0.10
+Flask
+Flask-Cors
 flatbuffers==1.12
 gast==0.3.3
 google-auth==2.3.3
