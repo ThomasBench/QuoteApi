@@ -6,7 +6,7 @@ from pathlib import Path
 app = Flask(__name__)
 CORS(app)
 path = str(Path())
-model = tf.keras.models.load_model(path + '//n_model//n_quotes_prediction_model')
+model = tf.keras.models.load_model(path + '/model_7/n_quotes_prediction_model')
 
 interpreter = {
     0: "between 0 and 10 quotes",
