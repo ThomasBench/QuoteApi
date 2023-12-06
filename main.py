@@ -16,6 +16,7 @@ interpreter = {
     4: "over 1000 quotes"
 }
 def model_out(model,obj):
+    print("Getting all the data at the right place")
     age = obj["age"]
     gender = obj["gender"]
     job = obj["job"]
@@ -29,7 +30,9 @@ def model_out(model,obj):
         'topic': tf.convert_to_tensor([np.array(topic)]),
         'emotion': tf.convert_to_tensor([np.array(emotion)]),
         }
+    print("Prediction")
     pred = model.predict(input)
+    print("Output the result")
     res = np.argmax(tf.nn.softmax(pred), axis = 1)
     # print(res)
     return int(res)
